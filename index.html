@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+    <title>Formaulário Logomarca</title>
+</head>
+<body>
+    <div class="tudo">
+        <div>
+            <h1 id="titulo">FORMULÁRIO PARA DESIGN DE LOGOMARCA</h1>
+            <p id="subtitulo"><strong>Responda todas as questões</strong></p>
+            <br>
+        </div>
+
+        <form>
+            <fieldset class="grupo">
+                <div class="campo" id="check">
+                    <label for="nome da empresa"><strong>Nome da empresa</strong></label>
+                    <input type="text" name="empresa" id="nome da empresa" required>
+                </div>
+                <div class="campo">
+                    <label for="ramo da empresa"><strong>Ramo da empresa</strong></label>
+                    <input type="text" name="ramo da empresa" id="ramo da empresa" required>
+                </div>
+            </fieldset>
+
+            <div class="campo">
+                <label for="Email"><strong>Email</strong></label>
+                <input type="email" name="Email" id="Email" required>
+            </div>
+
+            <div class="campo">
+                <label><strong>Sua empresa já possui uma logomarca?</strong></label>
+                <label>
+                    <input type="radio" name="logo" value="sim" checked> Sim
+                    <input type="radio" name="logo" value="Não"> Não
+                </label>
+            </div>
+            <div class="campo">
+                <Label for="resposta">Caso não possua, poque acha a logomarca necessária?</Label>
+                <input type="text" name="logomarca" id="resposta">
+            </div>
+            <div class="campo">
+                <label>Sua empresa esta a quanto tempo no mercado?</label>
+                <select id="tempo no mercado">
+                    <option selected disabled value="">Selecione</option>
+                    <option>1 a 10 anos</option>
+                    <option>10 a 15 anos</option>
+                    <option>15 a 30 anos</option>
+                </select>
+            </div>
+            <fieldset class="grupo">
+                <div class="campo">
+                    <label>Selecione o modelo de sua logo</label><br><br>
+                    <input type="checkbox" id="logo1" value="Texto">
+                    <label for="logo1">Texto</label>
+                    <input type="checkbox" id="logo2" value="Imagem">
+                    <label for="logo2">Imagem</label>
+                    <input type="checkbox" id="logo3" value="Texto e Imagem">
+                    <label for="logo3">Texto e imagem</label>
+                </div>
+            </fieldset>
+            <div class="campo">
+                <br>
+                <label>O que deseja que sua logomarca transmita para seu cliente?</label>
+                <textarea rows="6" style="width: 26em;" id="cliente" name="cliente"></textarea>
+            </div>
+            
+            <button type="submit" class="botao">Concluído</button>
+        </form>
+    </div>        
+    </body>
+</html>
